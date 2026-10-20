@@ -7,7 +7,8 @@ public class Product {
     private double price;
 
 
-    public Product() {}
+    public Product() {
+    }
 
 
     public Product(Long id, String name, double price) {
@@ -18,9 +19,18 @@ public class Product {
 
     // கெட்டர்கள் (Getters) - இதைப் பார்த்துதான் ஸ்பிரிங் பூட் JSON உருவாக்கும்
     public Long getId() {
-        return id; }
+        return id;
+    }
+
     public String getName() {
-        return name; }
+        return name;
+    }
+
     public double getPrice() {
-        return price; }
+        return price;
+    }
+
+    public void setId(Long id) {
+        this.id = id; }
+
 }
